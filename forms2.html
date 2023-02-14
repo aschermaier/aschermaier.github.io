@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <label for="quote">quote: </label>
+            <br/>
+            <input id="quote" name="quote" placeholder="neither hope nor fear"/> 
+            <br/> <!-- type isnt defined bc text is default, and placeholder is greyed out hint text-->
+
+            <label for="author">author: </label>
+            <br/>
+            <input id="author" name="author" type="text" placeholder="voltaire"/>
+            <br/>
+
+            <label for="phone">phone number: </label>
+            <br/>
+            <input type="tel" id="phone" name="phone" placeholder="867-5309" pattern="[0-9]{3}-[0-9]{4}"/>
+            <br/>
+
+            <label for="birthday">birthday: </label>
+            <br/>
+            <input type="date" id="birthday" name="birthday" placeholder="1944-11-05"/> <!--placeholder does not overwrite this format-->
+            <br/>
+
+            <fieldset>
+                <legend>Status</legend>
+                <input type="radio" id="alive" name="status" value="alive"/>
+                <label for="alive">alive</label>
+                <br/>
+
+                <input type="radio" id="dead" name="status" value="dead"/>
+                <label for="dead">dead</label>
+                <br/>
+
+                <input type="radio" id="undead" name="status" value="undead"/>
+                <label for="undead">undead</label>
+                <br/>
+
+                <input type="radio" id="undefined" name="status" value="undefined"/>
+                <label for="undefined">undefined</label>
+                <br/>
+
+                <input type="radio" id="unknown" name="status2" value="unknown"/> <!-- if the name isnt the same, you can select more than one thing-->
+                <label for="undefined">i dont know</label> <!-- also, this label doesnt have to be the same, but the value is what will show up in the URL -->
+                <br/>
+            </fieldset>
+
+            <input type="checkbox" id="verify" name="verify" value="true"/>
+            <label id="verify">Needs Verification</label>
+            <br/>
+
+            <input type="submit"/>
+            <input type="reset"/>
+            <br/>
+            <br/>
+            <input type="image" alt="Submit" src="https://www.seekpng.com/png/full/77-770209_png-file-save-icon-white-png.png" width="48" height="48"/>
+
+        </form>
+    </body>
+</html>
+
+<!-- 
+assets/save-96.png : this is what he used, but it doesnt work for me, so I found my own
+
+placeholder text doesnt show up in URLs:
+    http://127.0.0.1:5500/forms2.html?quote=&author=&phone=&birthday=
+
+run into issues with dates and times because people have different date formats and timezones
+
+different value and label:
+    http://127.0.0.1:5500/forms2.html?quote=&author=&phone=&birthday=&status2=unknown
+-->
