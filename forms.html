@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms...</title>
+</head>
+<body>
+    <form id="form1">
+        <label>First Name:</label>
+        <br/>
+        <input  
+            id = "firstName"
+            name = "First Name"
+            type = "text"
+            value = "Mike"
+            required
+        />
+
+        <br/>
+        <label>Password:</label>
+        <br/>
+        <input name = "Password" type = "password"/>
+        <br/>
+
+        <!-- <input name = "secret" type= "hidden" value = "some secret">don't tell</input> -->
+
+        <input name="session" type="hidden"  value="09470040-49f2-4e5b-9c">
+
+        <br/>
+        <label>Favorite Color: </label>
+        <input name = "Favorite Color" type="color">
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
+
+<!-- 
+string x = "hello \"there\" world";  the backslash is called escaping
+
+before clicking submit:
+http://127.0.0.1:5500/forms.html
+
+after clicking submit:
+http://127.0.0.1:5500/forms.html?First+Name=Mike
+
+using type = "text" or "password"... still can see in URL
+http://127.0.0.1:5500/forms.html?First+Name=Mike&Password=hello
+
+type = "hidden"...can't see on page directly, but can see when using inspect
+-->
