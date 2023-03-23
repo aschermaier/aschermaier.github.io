@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms...</title>
+    </head>
+    <body>
+        <form>
+            <label for="first">First Name: </label>
+            <br/>
+            <input id="first" name="first" minlength="1" maxlength="32" required/> 
+            <br/>
+
+            <label for="last">Last Name: </label>
+            <br/>
+            <input id="last" name="last" minlength="1" maxlength="32" required/>
+            <br/>
+
+            <label for="pw">Password: </label>
+            <br/>
+            <input type="password" id="pw" name="pw" required/> 
+            <br/>
+
+            <label for="email">Email: </label>
+            <br/>
+            <input type="email" id="email" name="email" required/> 
+            <br/>
+
+            <label for="phone">Phone Number: </label>
+            <br/>
+            <input type="tel" id="phone" name="phone" placeholder="440-123-4567" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+            <br/>
+
+            <label for="homepage">URL to a home page:</label>
+            <br/>
+            <input type="url" id="homepage" name="homepage">
+            <br/>
+
+            <label for="birth">Birth Month and Year:</label>
+            <br/>
+            <input type="month" id="birth" name="birth">
+            <br/>
+
+            <label for="notifications">Can we email you?</label>
+            <br/>
+            <input type="checkbox" id="notifications" name="notifications" value = yes >
+            <label for="notifications">Yes</label>
+            <br/>
+
+
+            <fieldset>
+                <legend>Do you like our product?</legend>
+                <input type="radio" id="1" name="rating" value="I don't like it"/>
+                <label for="1">I don't like it</label>
+                <br/>
+
+                <input type="radio" id="2" name="rating" value="It is ok, but it needs work"/>
+                <label for="2">It is ok, but needs work</label>
+                <br/>
+
+                <input type="radio" id="3" name="rating" value="I am neutral"/>
+                <label for="3">I am neutral</label>
+                <br/>
+
+                <input type="radio" id="4" name="rating" value="I like it"/>
+                <label for="4">I like it</label>
+                <br/>
+
+                <input type="radio" id="5" name="rating" value="I love it"/>
+                <label for="5">I love it</label> 
+                <br/>
+            </fieldset>
+
+            <br/>
+
+            <input type="submit"/>
+            <input type="reset"/>
+
+        </form>
+    </body>
+</html>
