@@ -12,3 +12,5 @@
 [References](references.html)
 
 [Cartoon Characters](cartoons.html)
+
+[New User Intake Form](newuser.html)
